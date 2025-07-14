@@ -17,7 +17,7 @@ This script is convert [Narou](https://syosetu.com/) to Markdown.
 ## Usage
 
 ```sh
-narou.sh <url>
+narou2md.sh <url>
 ```
 
 `<url>` rule is probably `https://ncode.syosetu.com/$NCODE`.
@@ -36,6 +36,11 @@ pandoc "$SRC" \
   --metadata title="$TITLE" \
   --metadata author="$AUTHOR"
 ```
+
+## Register to Kindle personal document
+
+* [Send to Kindle](https://www.amazon.co.jp/sendtokindle)
+
 
 ## License
 
