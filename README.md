@@ -1,6 +1,6 @@
-# narou2md.sh - Convert Narou to Markdown
+# webnovelutils - Convert web novel to Markdown
 
-This script is convert [Narou](https://syosetu.com/) to Markdown.
+This script is convert [Narou](https://syosetu.com/) and [Kakuyomu](https://kakuyomu.jp/) to Markdown.
 
 ## Requires
 
@@ -8,6 +8,7 @@ This script is convert [Narou](https://syosetu.com/) to Markdown.
 
 * wget
 * xmllint (it's provided by the libxml2-utils package)
+* jq
 
 ### My utilities
 
@@ -16,11 +17,22 @@ This script is convert [Narou](https://syosetu.com/) to Markdown.
 
 ## Usage
 
+### narou2md.sh
+
 ```sh
 narou2md.sh <url>
 ```
 
 `<url>` rule is probably `https://ncode.syosetu.com/$NCODE`.
+
+
+### kakuyomu2md.sh
+
+```sh
+kakuyomu2md.sh <url>
+```
+
+`<url>` rule is probably `https://kakuyomu.jp/works/$workId`.
 
 ## Convert from Markdown to EPUB
 
